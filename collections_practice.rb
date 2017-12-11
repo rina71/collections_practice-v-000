@@ -29,5 +29,6 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.sum
+  sum = 0
+  array.collect{|e| sum += e}
 end
