@@ -36,11 +36,11 @@ end
 
 def add_s(array)
 
-  array.collect{|item| 
-    if item[1] == item 
-      item 
-    else 
-      item << "s" 
+  array.collect{|item|
+    if item[1] == item
+      item
+    else
+      item << "s"
     end}
 
 end
