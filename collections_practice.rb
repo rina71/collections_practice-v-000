@@ -21,7 +21,7 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.each{|item| item.split(' ')}
+  array.each{|item| item[2] = "$"}
 end
 
 def find_a(array)
@@ -36,6 +36,6 @@ end
 
 def add_s(array)
 
-  array.each_with_index.collect{|item,index| item << "s" while index == !1 }
+  array.collect{|item| if item[1] == item item else item << "s" end}
 
 end
