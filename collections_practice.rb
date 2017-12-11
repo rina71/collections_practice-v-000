@@ -33,3 +33,8 @@ def sum_array(array)
   array.collect{|e| sum += e}
   return sum
 end
+
+def add_s(array)
+
+  array.each_with_index.collect{|item,index| item << "s" if index == !2}
+end
