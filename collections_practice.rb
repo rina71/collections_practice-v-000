@@ -36,6 +36,6 @@ end
 
 def add_s(array)
 
-  array.each_with_index.collect{|item,index| item << "s" }
+  array.each_with_index.collect{|item,index| item << "s" while index == !1 }
 
 end
