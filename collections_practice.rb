@@ -31,5 +31,5 @@ end
 def sum_array(array)
   sum = 0
   array.collect{|e| sum += e}
-  return array.last
+  return sum
 end
